@@ -67,19 +67,19 @@ function App() {
         </div>
 
         {/* Hero Content - Exact Layout */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between w-full hero-content">
           {/* Left Side - Chrome Android Bust and Brand */}
-          <div className="flex items-center space-x-2 sm:space-x-4 md:space-x-6">
+          <div className="flex items-center space-x-4 sm:space-x-6 hero-left">
             <div className="chrome-android-bust">
               <User className="w-16 h-16 text-transparent" />
             </div>
             <div className="brand-text">
-              <h2 className="text-sm sm:text-xl md:text-2xl font-light tracking-wider text-white">HER.AI AUTOMATION</h2>
+              <h2 className="text-xl sm:text-2xl font-light tracking-wider text-white">HER.AI AUTOMATION</h2>
             </div>
           </div>
 
           {/* Center - Main Headline */}
-          <div className="text-left flex-1 flex justify-center">
+          <div className="text-left hero-center">
             <h1 className="main-headline">
               AUTOMATE<br />
               YOUR<br />
@@ -88,7 +88,7 @@ function App() {
           </div>
 
           {/* Right Side - Empty for balance */}
-          <div className="flex items-center hidden md:block">
+          <div className="flex items-center hero-right hidden md:block">
           </div>
         </div>
 

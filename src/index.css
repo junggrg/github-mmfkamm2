@@ -51,8 +51,8 @@ spline-viewer {
 
 /* Chrome Android Bust - Exact Match */
 .chrome-android-bust {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   background: linear-gradient(135deg, 
     #ffd700, #ffed4e, #ff9500, #ff6b35, 
     #e63946, #f72585, #b5179e, #7209b7, 
@@ -363,30 +363,30 @@ spline-viewer {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .main-headline {
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 0.85;
+  }
+
+  .chrome-android-bust {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-headline {
+    font-size: 3.5rem;
+    line-height: 0.8;
+    letter-spacing: -0.01em;
   }
 
   .chrome-android-bust {
     width: 80px;
     height: 80px;
   }
-}
-
-@media (max-width: 768px) {
-  .main-headline {
-    font-size: 2.8rem;
-    line-height: 0.8;
-    letter-spacing: -0.01em;
-  }
-
-  .chrome-android-bust {
-    width: 50px;
-    height: 50px;
-  }
   
   .brand-text h2 {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     letter-spacing: 0.1em;
   }
   
@@ -399,22 +399,39 @@ spline-viewer {
   }
   
   /* Mobile hero section adjustments */
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .hero-left {
+    order: 2;
+  }
+  
+  .hero-center {
+    order: 1;
+  }
 }
 
 @media (max-width: 480px) {
   .main-headline {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     line-height: 0.75;
     letter-spacing: 0;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 90vw;
+    word-break: break-word;
   }
 
   .chrome-android-bust {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
   }
   
   .brand-text h2 {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     letter-spacing: 0.05em;
   }
   
@@ -432,7 +449,7 @@ spline-viewer {
 
 @media (max-width: 375px) {
   .main-headline {
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 0.7;
   }
   
@@ -444,7 +461,7 @@ spline-viewer {
 
 @media (max-width: 320px) {
   .main-headline {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 0.65;
   }
   
